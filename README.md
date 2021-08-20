@@ -43,10 +43,10 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
 <a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a>  
  <a href="https://github.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain.svg" alt="git" width="40" height="40"/> </a> 
  <a href="https://ubuntu.com/" target="_blank"> <img src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/ubuntu.svg" alt="ubuntu" width="40" height="40"/> </a> 
+ <a href="" target="_blank"> <img src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/vscode.svg" alt="vscode" width="40" height="40"/> </a> 
 <a href="https://www.figma.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> 
 <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> 
 <a href="https://www.adobe.com/products/xd.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a>
- <a href="https://www.adobe.com/products/illustrator.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-isllustrator.svg" alt="xd" width="40" height="40"/> </a>
   
    </p>
 
