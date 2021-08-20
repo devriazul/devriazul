@@ -30,7 +30,7 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
 
 ### 👨🏻‍💻 Languages and Tools:
 <p align="center">
- <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/>
+ <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/htmljs/htmljs-icon.svg" alt="html" width="40" height="40"/>
   <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/>
    <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/>
     <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/>
