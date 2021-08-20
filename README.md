@@ -20,7 +20,7 @@ I am a MERN-Stack WEB Developer. I am working with React, Node.js and MongoDB. I
 
   </br>
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=devriazul&show_icons=true&locale=en&layout=compact" alt="Md Riazul Islam" /></p>
+<p align="center" background-color=black color=white><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=devriazul&show_icons=true&locale=en&layout=compact" alt="Md Riazul Islam" /></p>
 
 <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=devriazul&show_icons=true&locale=en" alt="Md Riazul Islam" /></p>
 
