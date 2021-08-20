@@ -11,6 +11,7 @@
 I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL. I also have experience in developing static/dynamic websites using HTML5, CSS3, Bootstrap, JavaScript (ES6) and Wordpress. I am a quick learner. I believe in hard work and efficiency. That's why I am always ready to accomplish any task by working hard. I always focus on learning new technology. My goal is to become A World-Class Professional Web Developer. 
 
  ### 🕵🏻‍♂️ Conect with me
+ 
   <p align="center">
  <a href="https://www.facebook.com/WhoIsRiaz/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="facebook" width="30" height="30"/>
  <a href="https://www.linkedin.com/in/engr-riazulislam/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="linkedin" width="30" height="30"/>
@@ -24,6 +25,7 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
   </p>
    
 ### 🤵 Trophy Status
+   
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devriazul" alt="Md Riazul Islam" /></a> </p>
 
 ### 👨🏻‍💻 Languages and Tools:
