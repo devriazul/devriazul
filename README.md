@@ -12,6 +12,9 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
 
  ### 🕵🏻‍♂️ Conect with me
   <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="20" height="20"/>
+ <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/linkedIN/linkedIN-icon.svg" alt="babel" width="20" height="20"/>
+  <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="20" height="20"/>
+   <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="20" height="20"/>
 
  ### <a href="https://riaz.fastitbd.com">🌐 You can see of My portfolio</a>
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devriazul" alt="Md Riazul Islam" /></a> </p>
