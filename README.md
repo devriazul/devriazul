@@ -20,7 +20,7 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
   <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/skype/skype-icon.svg" alt="skype" width="30" height="30"/>
   <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/whatsapp/whatsapp-icon.svg" alt="whatsapp" width="30" height="30"/>
   <a href="https://www.figma.com/files/user/989569216476556595?fuid=989569216476556595" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="30" height="30"/>
-   <a href="riaz.fastitbd.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/web/web-icon.svg" alt="web" width="30" height="30"/>
+   <a href="riaz.fastitbd.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/website/website-icon.svg" alt="website" width="30" height="30"/>
   </p>
 
  
