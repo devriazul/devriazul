@@ -23,7 +23,7 @@ I am a MERN-Stack WEB Developer. I am working with React, Node.js and MongoDB. I
 ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
 ![PHP](https://img.shields.io/badge/-PHP-000000?style=flat&logo=PHP&logoColor=764ABC&labelColor=ffffff)
 ![React Native](https://img.shields.io/badge/-React%20Native-000000?style=flat&logo=react&labelColor=000000)
-![PHP](https://img.shields.io/badge/-PHP%20OOP-000000?style=flat&logo=react&labelColor=000000)
+![PHP](https://img.shields.io/badge/-PHP%20OOP-000000?style=flat&logo=PHP&labelColor=000000)
 ![Nodejs](https://img.shields.io/badge/-Nodejs-000000?style=flat&logo=Node.js)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb&labelColor=ffffff)
 ![Sass](https://img.shields.io/badge/-Sass-000000?style=flat&logo=sass&logoColor=ffffff&labelColor=%23CC6699)
