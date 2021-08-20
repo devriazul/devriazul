@@ -23,7 +23,7 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
   <a href="https://www.figma.com/files/user/989569216476556595?fuid=989569216476556595" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="30" height="30"/>
   </p>
    
- ### 🕵🏻‍♂️ Trophy Status
+### 🤵 Trophy Status
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devriazul" alt="Md Riazul Islam" /></a> </p>
 
 ### 👨🏻‍💻 Languages and Tools:
