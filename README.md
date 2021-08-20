@@ -11,8 +11,8 @@
 I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL. I also have experience in developing static/dynamic websites using HTML5, CSS3, Bootstrap, JavaScript (ES6) and Wordpress. I am a quick learner. I believe in hard work and efficiency. That's why I am always ready to accomplish any task by working hard. I always focus on learning new technology. My goal is to become A World-Class Professional Web Developer. 
 
  ### 🕵🏻‍♂️ Conect with me
-  <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="20" height="20"/>
- <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/linkedIN/linkedIN-icon.svg" alt="babel" width="20" height="20"/>
+  <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="facebook" width="20" height="20"/>
+ <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="linkedin" width="20" height="20"/>
   <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="20" height="20"/>
    <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="20" height="20"/>
 
