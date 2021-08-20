@@ -35,8 +35,12 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
   </br>
 
 <p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=devriazul&show_icons=true&locale=en&layout=compact" alt="Md Riazul Islam" /></p>
+   
+    </br>
 
 <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=devriazul&show_icons=true&locale=en" alt="Md Riazul Islam" /></p>
 
+    </br>
+   
 <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=devriazul&" alt="Md Riazul Islam" /></p>
 
