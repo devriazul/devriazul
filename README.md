@@ -40,7 +40,7 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
  <a href="https://laravel.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" alt="laravel" width="40" height="40"/> </a>
  <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> 
 <a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> 
- <a href="https://www.wordpress.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/wordpress/wordpress-original-wordmark.svg" alt="wordpress" width="40" height="40"/> </a> 
+ <a href="https://www.nodejs.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
  <a href="https://ubuntu.com/" target="_blank"> <img src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/ubuntu.svg" alt="ubuntu" width="40" height="40"/> </a> 
 <a href="https://www.figma.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> 
 <a href="https://github.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain.svg" alt="git" width="40" height="40"/> </a> 
