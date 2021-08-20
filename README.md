@@ -14,8 +14,8 @@ I am a Full-Stack Web Developer. I am working with React, PHP, Laravel and MySQL
   <p align="left">
  <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="facebook" width="20" height="20"/>
  <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="linkedin" width="20" height="20"/>
- <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="20" height="20"/>
- <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="20" height="20"/>
+ <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" alt="twitter" width="20" height="20"/>
+ <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg" alt="stackoverflow" width="20" height="20"/>
   </p>
 
  ### <a href="https://riaz.fastitbd.com">🌐 You can see of My portfolio</a>
