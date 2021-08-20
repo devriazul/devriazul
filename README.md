@@ -13,7 +13,7 @@ I am a MERN-Stack WEB Developer. I am working with React, Node.js and MongoDB. I
   <p align="center"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="babel" width="40" height="40"/>
 
 - 🌐 You can see some of my projects on [my portfolio](https://riaz.fastitbd.com).
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devriazul" alt="Md Riazul Islam" /></a> </p>
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devriazul" alt="Md Riazul Islam" /></a> </p>
 
 ## 💻 Languages and Tools:
 <p align="left"> <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/>
