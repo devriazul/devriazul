@@ -69,4 +69,7 @@ I am a Web Developer. I am working with React, PHP, Laravel and MySQL. I also ha
     
    
 <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=devriazul&" alt="Md Riazul Islam" /></p>
+  
+
+![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=devriazul)  
 
