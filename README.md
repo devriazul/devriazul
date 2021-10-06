@@ -60,7 +60,8 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
 
   
 
-<!-- <p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=devriazul&show_icons=true&locale=en&layout=compact" alt="Md Riazul Islam"/></br></p> -->
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=devriazul&show_icons=true&locale=en&layout=compact" alt="Md Riazul Islam"/></br></p>
+   
    [![GitHub Streak](https://ecommerce-laravel-app.herokuapp.com?user=devriazul&theme=ayu-light&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
    
     
@@ -69,7 +70,7 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
 
     
    
-<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=devriazul&" alt="Md Riazul Islam" /></p>
+<!-- <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=devriazul&" alt="Md Riazul Islam" /></p> -->
   
 
 ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=devriazul)  
