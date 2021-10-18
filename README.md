@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@devriazul 
+devriazul
+/
+devriazul
+Public
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+devriazul/README.md
+@devriazul
+devriazul Update README.md
+Latest commit bfccd50 12 days ago
+ History
+ 1 contributor
+78 lines (54 sloc)  8.17 KB
+   
 
 
 <h3 align="center">Hey there, I'm Md Riazul Islam <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="28"/></h3>
@@ -37,8 +68,6 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
 <!--  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" alt="jquery" width="40" height="40"/> </a>  -->
 <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
- <!-- <a href="https://www.adobe.com/products/xd.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/ajax-1.svg" alt="xd" width="40" height="40"/> </a> -->
- 
  <a href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> 
  <a href="https://www.php.net" target="_blank"> <img src="https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg" alt="php" width="40" height="40"/> </a> 
  <a href="https://laravel.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" alt="laravel" width="40" height="40"/> </a>
@@ -78,3 +107,16 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
 
 ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=devriazul)  
 
+New devriazul/devriazul is now a special repository: its README.md will appear on your profile!
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
