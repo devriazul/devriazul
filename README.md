@@ -1,4 +1,6 @@
 
+   <p align="center"><a href="https://stardev.io/developers/devriazul"><img alt="Check out devriazul&apos;s profile on stardev.io" src="https://stardev.io/developers/devriazul/badge/languages/global.svg" /></a></p>
+   
 <h3 align="center">Hey there, I'm Md Riazul Islam <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="28"/></h3>
 
 <p align="center">
@@ -27,9 +29,7 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
    
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devriazul" alt="Md Riazul Islam" /></a> </p>
 
-### 🤵 Star Dev Status     
-   <p align="center"><a href="https://stardev.io/developers/devriazul"><img alt="Check out devriazul&apos;s profile on stardev.io" src="https://stardev.io/developers/devriazul/badge/languages/global.svg" /></a></p>
-   
+  
 ### 👨🏻‍💻 Languages and Tools:
 <p align="center">
  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
