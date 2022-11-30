@@ -27,6 +27,8 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
    
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devriazul" alt="Md Riazul Islam" /></a> </p>
 
+<a href="https://stardev.io/developers/devriazul"><img alt="Check out devriazul&apos;s profile on stardev.io" src="https://stardev.io/developers/devriazul/badge/languages/global.svg" /></a>
+   
 ### 👨🏻‍💻 Languages and Tools:
 <p align="center">
  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
