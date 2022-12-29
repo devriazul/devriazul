@@ -1,6 +1,4 @@
-
-   <p align="center"><a href="https://stardev.io/developers/devriazul"><img alt="Check out devriazul&apos;s profile on stardev.io" src="https://stardev.io/developers/devriazul/badge/languages/global.svg" /></a></p>
-   
+  
 <h3 align="center">Hey there, I'm Md Riazul Islam <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="28"/></h3>
 
 <p align="center">
@@ -76,4 +74,5 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
 <!-- <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=devriazul&" alt="Md Riazul Islam" /></p> -->
   
 
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=devriazul)  
+<!-- ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=devriazul)   -->
+<p align="center"><a href="https://stardev.io/developers/devriazul"><img alt="Check out devriazul&apos;s profile on stardev.io" src="https://stardev.io/developers/devriazul/badge/languages/global.svg" /></a></p>
