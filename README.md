@@ -80,4 +80,4 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
   
 
 <!-- ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=devriazul)   -->
-<a align="center" href="https://stardev.io/developers/devriazul"><img alt="Check out devriazul&apos;s profile on stardev.io" src="https://stardev.io/developers/devriazul/badge/languages/locality.svg" /></a>
+<p align="center" href="https://stardev.io/developers/devriazul"><img alt="Check out devriazul&apos;s profile on stardev.io" src="https://stardev.io/developers/devriazul/badge/languages/locality.svg" /></p>
