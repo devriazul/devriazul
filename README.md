@@ -59,6 +59,7 @@ I am a Full Stack Web Developer. I am working with React, PHP, Laravel and MySQL
       <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="microsoft" width="40" height="40"/>
         <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/digitalocean/digitalocean-official.svg" alt="microsoft" width="40" height="40"/>
           <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="microsoft" width="40" height="40"/>
+            <a href="" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="microsoft" width="40" height="40"/>
   
    </p>
 
