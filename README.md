@@ -7,7 +7,7 @@
 
 ### 📖 About me
 
-Driven Senior Web Developer with extensive expertise in React, PHP, Laravel, and MySQL, adept at crafting dynamic websites using a range of technologies including HTML5, CSS3, Bootstrap, Tailwind, JavaScript (ES6), and WordPress. Known for quick adaptability and a passion for learning, I am committed to delivering high-quality work with efficiency and dedication. My ultimate aspiration is to elevate my skills and knowledge to become a world-class professional web developer, continuously pushing boundaries and delivering innovative solutions in the ever-evolving digital landscape.
+Driven Senior Software Developer with extensive expertise in React, PHP, Laravel, and MySQL, adept at crafting dynamic websites using a range of technologies including HTML5, CSS3, Bootstrap, Tailwind, JavaScript (ES6), and WordPress. Known for quick adaptability and a passion for learning, I am committed to delivering high-quality work with efficiency and dedication. My ultimate aspiration is to elevate my skills and knowledge to become a world-class professional web developer, continuously pushing boundaries and delivering innovative solutions in the ever-evolving digital landscape.
 
  ### 🕵🏻‍♂️ Conect with me
  
