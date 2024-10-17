@@ -6,7 +6,7 @@
 
 ### 📖 About me
 
-I am a Senior Web-Developer at <a href="https://bheuni.io" target="_blank">**BHE UNI**</a>, with expertise in **React, PHP, Laravel, MySQL**, and more. I build dynamic, scalable web applications using a variety of modern technologies such as **HTML5, CSS3, Bootstrap, Tailwind**, and **WordPress**. I have a passion for learning and continually improving, always striving for innovation in the fast-paced digital world. My goal is to become a world-class professional web developer, constantly evolving and pushing the boundaries of what’s possible.
+I am a Senior Web-Developer at <a href="https://bheuni.io" target="_blank">**BHE UNI**</a>, with expertise in **React (Next.Js), PHP, Laravel, MySQL**, and more. I build dynamic, scalable web applications using a variety of modern technologies such as **HTML5, CSS3, Bootstrap, Tailwind**, and **WordPress**. I have a passion for learning and continually improving, always striving for innovation in the fast-paced digital world. My goal is to become a world-class professional web developer, constantly evolving and pushing the boundaries of what’s possible.
 
 ### 🕵🏻‍♂️ Connect with me
 
@@ -27,6 +27,7 @@ I am a Senior Web-Developer at <a href="https://bheuni.io" target="_blank">**BHE
 
 ### 👨🏻‍💻 Languages and Tools:
 <p align="center">
+  <a href="https://nextjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="40" height="40"/> </a>
   <a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
   <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
