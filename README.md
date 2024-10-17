@@ -46,14 +46,12 @@ I am passionate about **learning**, constantly **improving**, and always pushing
   
 </p>
 
-
-
 ---
+
 <h3>📚 Education</h3>
     <p>
-        Master of Science in Computer Science and Engineering - <strong>Jahangirnagar University (JU)</strong>, 2022.
+        Master of Science in Computer Science and Engineering - <strong>Jahangirnagar University (JU)</strong>
     </p>
----
     <h3>🛠️ Work Experience</h3>
     <p>
         <strong>Senior Web Developer</strong> at <strong>BHE UNI</strong> - September 2022 to Present
@@ -65,7 +63,8 @@ I am passionate about **learning**, constantly **improving**, and always pushing
         <br>
         Assisted in the development of web applications and worked closely with senior developers.
     </p>
-  ---
+    
+---
 
 ### 🏆 Trophy Status
 
@@ -101,6 +100,9 @@ I am passionate about **learning**, constantly **improving**, and always pushing
 <p align="start">
   <img align="start" src="https://github-readme-stats.vercel.app/api/top-langs?username=devriazul&show_icons=true&locale=en&layout=compact" alt="Md Riazul Islam"/>
 </p>
+
+---
+
 <p align="start">
   <img align="start" src="https://github-readme-stats.vercel.app/api?username=devriazul&show_icons=true&locale=en" alt="Md Riazul Islam"/>
 </p>
