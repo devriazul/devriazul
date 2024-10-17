@@ -1,32 +1,84 @@
-<h3 align="center">Hey there, I'm Riazul Islam <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="28"/></h3>
+<h3 align="center">
+  Hey there, I'm Riazul Islam 
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
+  <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="28"/>
+</h3>
 
 <p align="center">
-<img src="https://komarev.com/ghpvc/?username=devriazul&label=Profile%20views&color=0e75b6&style=flat" alt="devriazul" />
+  <img src="https://komarev.com/ghpvc/?username=devriazul&label=Profile%20views&color=0e75b6&style=flat" alt="devriazul" />
 </p>
+
+---
 
 ### 📖 About me
 
-I am a Senior Web-Developer at <a href="https://bheuni.io" target="_blank">**BHE UNI**</a>, with expertise in **React (Next.Js), PHP, Laravel, MySQL**, and more. I build dynamic, scalable web applications using a variety of modern technologies such as **HTML5, CSS3, Bootstrap, Tailwind**, and **WordPress**. I have a passion for learning and continually improving, always striving for innovation in the fast-paced digital world. My goal is to become a world-class professional web developer, constantly evolving and pushing the boundaries of what’s possible.
+I am a **Senior Web-Developer** at <a href="https://bheuni.io" target="_blank">**BHE UNI**</a>, with expertise in **React (Next.js), PHP, Laravel, MySQL**, and more. I build dynamic, scalable web applications using modern technologies like **HTML5, CSS3, Bootstrap, Tailwind**, and **WordPress**. 
+
+I am passionate about **learning**, constantly **improving**, and always pushing the boundaries of what's possible. My goal is to evolve into a world-class developer, striving for **innovation** in the fast-paced digital world.
 
 ### 🕵🏻‍♂️ Connect with me
-
-<p align="center">
-  <a href="https://www.facebook.com/WhoIsRiaz/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="facebook" width="30" height="30"/> </a>
-  <a href="https://www.linkedin.com/in/devriazul/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="linkedin" width="30" height="30"/> </a>
-  <a href="https://twitter.com/devriazul" target="_blank"> <img src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" alt="twitter" width="30" height="30"/> </a>
-  <a href="https://stackoverflow.com/users/16483163/md-riazul-islam" target="_blank"> <img src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg" alt="stackoverflow" width="30" height="30"/> </a>
-  <a href="https://api.whatsapp.com/send?phone=8801722754100" target="_blank"> <img src="https://www.vectorlogo.zone/logos/whatsapp/whatsapp-icon.svg" alt="whatsapp" width="30" height="30"/> </a>
-  <a href="https://www.figma.com/files/user/989569216476556595?fuid=989569216476556595" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="30" height="30"/> </a>
+<p align="start">
+  <a href="tel:+8801722754100" target="_blank"> 
+    <img src="https://img.icons8.com/ios-filled/50/4CAF50/phone.png" alt="phone" width="30" height="30" style="padding: 0 10px;"/> 
+  </a>
+  <a href="mailto:engr.riazul@gmail.com" target="_blank"> 
+    <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="email" width="30" height="30" style="padding: 0 10px;"/> 
+  </a>
+  <a href="https://api.whatsapp.com/send?phone=8801722754100" target="_blank"> 
+    <img src="https://www.vectorlogo.zone/logos/whatsapp/whatsapp-icon.svg" alt="whatsapp" width="30" height="30" style="padding: 0 10px;"/> 
+  </a>
+  <a href="https://www.facebook.com/devriazul/" target="_blank"> 
+    <img src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" alt="facebook" width="30" height="30" style="padding: 0 10px;"/> 
+  </a>
+  <a href="https://www.linkedin.com/in/devriazul/" target="_blank"> 
+    <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="linkedin" width="30" height="30" style="padding: 0 10px;"/> 
+  </a>
+  <a href="https://twitter.com/devriazul" target="_blank"> 
+    <img src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" alt="twitter" width="30" height="30" style="padding: 0 10px;"/> 
+  </a>
+  <a href="https://stackoverflow.com/users/16483163/devriazul" target="_blank"> 
+    <img src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg" alt="stackoverflow" width="30" height="30" style="padding: 0 10px;"/> 
+  </a>
+  
+  <a href="https://www.figma.com/files/user/989569216476556595?fuid=989569216476556595" target="_blank"> 
+    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="30" height="30" style="padding: 0 10px;"/> 
+  </a>
+  
 </p>
 
-### 🤵 Trophy Status
 
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devriazul" alt="Md Riazul Islam" /></a>
+
+---
+<h3>📚 Education</h3>
+    <p>
+        Master of Science in Computer Science and Engineering - <strong>Jahangirnagar University (JU)</strong>, 2022.
+    </p>
+---
+    <h3>🛠️ Work Experience</h3>
+    <p>
+        <strong>Senior Web Developer</strong> at <strong>BHE UNI</strong> - September 2022 to Present
+        <br>
+        Developed and maintained various web applications using modern technologies.
+    </p>
+    <p>
+        <strong>Web Developer</strong> at <strong>Saic Group</strong> - December 2020 to September 2022
+        <br>
+        Assisted in the development of web applications and worked closely with senior developers.
+    </p>
+  ---
+
+### 🏆 Trophy Status
+
+<p align="start">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=devriazul&theme=dracula" alt="Md Riazul Islam" />
+  </a>
 </p>
 
-### 👨🏻‍💻 Languages and Tools:
-<p align="center">
+---
+
+### 👨🏻‍💻 Languages and Tools
+<p align="start">
   <a href="https://nextjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="40" height="40"/> </a>
   <a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
@@ -43,9 +95,18 @@ I am a Senior Web-Developer at <a href="https://bheuni.io" target="_blank">**BHE
   <a href="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a>
 </p>
 
-<p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=devriazul&show_icons=true&locale=en&layout=compact" alt="Md Riazul Islam"/>
+---
+
+### 🌟 GitHub Stats
+<p align="start">
+  <img align="start" src="https://github-readme-stats.vercel.app/api/top-langs?username=devriazul&show_icons=true&locale=en&layout=compact" alt="Md Riazul Islam"/>
 </p>
-<p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=devriazul&show_icons=true&locale=en" alt="Md Riazul Islam"/>
+<p align="start">
+  <img align="start" src="https://github-readme-stats.vercel.app/api?username=devriazul&show_icons=true&locale=en" alt="Md Riazul Islam"/>
+</p>
+
+---
+
+<p align="start">
+  <img align="start" src="https://github-readme-streak-stats.herokuapp.com/?user=devriazul&" alt="Md Riazul Islam" />
 </p>
