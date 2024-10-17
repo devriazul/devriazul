@@ -12,9 +12,14 @@
 
 ### 📖 About me
 
-I am a **Senior Web-Developer** at <a href="https://bheuni.io" target="_blank">**BHE UNI**</a>, with expertise in **React (Next.js), PHP, Laravel, MySQL**, and more. I build dynamic, scalable web applications using modern technologies like **HTML5, CSS3, Bootstrap, Tailwind**, and **WordPress**. 
+<p>
+    I am a <strong>Senior Web Developer</strong> at <a href="https://bheuni.io" target="_blank"><strong>BHE UNI</strong></a>, where I specialize in building dynamic, scalable web applications that enhance user experience and drive engagement.<br><br>
+    With extensive expertise in <strong>React (Next.js), PHP, Laravel, MySQL</strong>, and API development, I leverage modern technologies such as <strong>HTML5, CSS3, Bootstrap, Tailwind</strong>, and <strong>WordPress</strong> to create robust solutions tailored to client needs.<br><br>
+    My experience extends beyond development to include deploying applications on cloud platforms and managing hosting environments via <strong>cPanel</strong> and <strong>WHM</strong> or Cloud Platform like <strong>Digital Ocean</strong>. I am also skilled in Microsoft email server management, ensuring seamless communication and support for users.<br><br>
+    My passion for coding and problem-solving enables me to adapt quickly to new challenges and continuously evolve my skill set. I thrive on delivering high-quality work efficiently while embracing innovative approaches to meet the demands of the ever-changing digital landscape.<br><br>
+    My goal is to further elevate my expertise and become a world-class professional web developer, dedicated to pushing boundaries and crafting impactful solutions that inspire users and clients alike.
+</p>
 
-I am passionate about **learning**, constantly **improving**, and always pushing the boundaries of what's possible. My goal is to evolve into a world-class developer, striving for **innovation** in the fast-paced digital world.
 
 ### 🕵🏻‍♂️ Connect with me
 <p align="start">
