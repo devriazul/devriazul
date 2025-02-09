@@ -13,14 +13,8 @@
 ### 📖 About me
 
 <p>
-    I am a <strong>Senior Web Developer</strong> at <a href="https://bheuni.io" target="_blank"><strong>BHE UNI</strong></a>, where I specialize in building dynamic, scalable web applications that enhance user experience and drive engagement.<br><br>
-    With extensive expertise in <strong>React (Next.js), PHP, Laravel, MySQL</strong>, and API development, I leverage modern technologies such as <strong>HTML5, CSS3, Bootstrap, Tailwind</strong>, and <strong>WordPress</strong> to create robust solutions tailored to client needs.<br><br>
-    My experience extends beyond development to include deploying applications on cloud platforms and managing hosting environments via <strong>cPanel</strong> and <strong>WHM</strong> or Cloud Platform like <strong>Digital Ocean</strong>. I am also skilled in Microsoft email server management, ensuring seamless communication and support for users.<br><br>
-    My passion for coding and problem-solving enables me to adapt quickly to new challenges and continuously evolve my skill set. I thrive on delivering high-quality work efficiently while embracing innovative approaches to meet the demands of the ever-changing digital landscape.<br><br>
-    My goal is to further elevate my expertise and become a world-class professional web developer, dedicated to pushing boundaries and crafting impactful solutions that inspire users and clients alike.
+    I am a Full Stack Developer at <a href="bheuni.io" target="_blank">BHE UNI</a>, specializing in dynamic, scalable web applications that enhance user experience and drive engagement. Proficient in React (Next.js), PHP, Laravel, MySQL, and API development, I utilize technologies like Bootstrap, Tailwind, and WordPress to create tailored solutions. My experience includes deploying applications on cloud platforms and managing hosting environments with cPanel, WHM, and Digital Ocean, as well as Microsoft email server management. I am passionate about coding and problem-solving, continually refining my skills to deliver high-quality work efficiently. My goal is to further establish myself as a leading web developer, committed to creating impactful solutions for users and clients.
 </p>
-
-
 ### 🕵🏻‍♂️ Connect with me
 <p align="start">
   <a href="tel:+8801722754100" target="_blank"> 
