@@ -1,77 +1,104 @@
-<!-- ========================= HEADER ========================= -->
+<!-- ========================================================= -->
+<!--                       HERO SECTION                       -->
+<!-- ========================================================= -->
+
 <h1 align="center">
-  Hi 👋, I'm <span style="color:#0e75b6;">Riazul Islam</span>
+  Hi 👋 I'm <span style="color:#0e75b6;">Riazul Islam</span>
 </h1>
 
 <h3 align="center">
-  Senior Full Stack Web Developer | React · Next.js · Laravel · Cloud
+  Senior Software Developer • Full Stack Engineer • Automation & Cloud Enthusiast
 </h3>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=devriazul&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="profile views" />
-  <img src="https://img.shields.io/github/followers/devriazul?label=Followers&style=for-the-badge" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=800&center=true&vCenter=true&width=800&lines=Senior+Software+Developer+at+BHE+UNI;Full+Stack+Engineer+%7C+React+%7C+Next.js+%7C+Laravel;Recently+Worked+with+AWS+%26+Cloud+Infrastructure;n8n+Workflow+%26+Business+Automation;Currently+Studying+NLP+with+Python;Building+Scalable%2C+Reliable+and+Impactful+Systems" />
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/devriazul/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://twitter.com/devriazul"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
-  <a href="mailto:engr.riazul@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://stackoverflow.com/users/16483163/devriazul"><img src="https://img.shields.io/badge/StackOverflow-F58025?style=for-the-badge&logo=stackoverflow&logoColor=white"/></a>
+  <img src="https://komarev.com/ghpvc/?username=devriazul&label=Profile%20Views&color=0e75b6&style=for-the-badge" />
+  <img src="https://img.shields.io/github/followers/devriazul?label=Followers&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Senior%20Developer-Professional-blue?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/devriazul/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:engr.riazul@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://twitter.com/devriazul">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+  </a>
+  <a href="https://stackoverflow.com/users/16483163/devriazul">
+    <img src="https://img.shields.io/badge/StackOverflow-F58025?style=for-the-badge&logo=stackoverflow&logoColor=white"/>
+  </a>
 </p>
 
 ---
 
-<!-- ========================= ABOUT ========================= -->
+<!-- ========================================================= -->
+<!--                         ABOUT ME                         -->
+<!-- ========================================================= -->
+
 ## 🚀 About Me
 
-I’m a **Senior Full Stack Web Developer at BHE UNI**, passionate about building **scalable, high-performance web applications** that deliver real business value.
+I am a **Senior Software Developer at BHE UNI** with strong experience in designing, developing, and maintaining **scalable full-stack applications**.
 
-- 🔹 Expertise in **React (Next.js), PHP, Laravel, MySQL**
-- 🔹 Strong experience with **REST APIs & system architecture**
-- 🔹 UI/UX using **Tailwind, Bootstrap & Figma**
-- 🔹 Cloud & DevOps: **DigitalOcean, AWS, Docker**
-- 🔹 Hosting & server management: **cPanel, WHM, Linux**
-- 🔹 Email & infrastructure: **Microsoft Mail Server**
+I specialize in building reliable systems using modern web technologies while continuously expanding my expertise in **cloud computing, automation, and AI-driven solutions**.
 
-🎯 **Goal:** To continuously grow as a top-tier developer while crafting impactful digital solutions.
+- 💼 Senior Software Developer at **BHE UNI**
+- ⚙️ Full-stack development with **React (Next.js), PHP, Laravel**
+- ☁️ Recently worked with **AWS & cloud deployments**
+- 🤖 Workflow & business automation using **n8n**
+- 🧠 Currently studying **Natural Language Processing (NLP) with Python**
+- 🛠 Experience with hosting, Linux servers, cPanel, WHM & DigitalOcean
+
+🎯 **Focus:** Clean architecture, performance, automation, and long-term maintainability.
 
 ---
 
-<!-- ========================= EXPERIENCE ========================= -->
+<!-- ========================================================= -->
+<!--                     WORK EXPERIENCE                      -->
+<!-- ========================================================= -->
+
 ## 💼 Work Experience
 
-### 🏢 **Senior Web Developer — BHE UNI**
-📅 *September 2022 – Present*  
-- Architected and maintained scalable web applications  
-- Optimized performance and database efficiency  
-- Collaborated with designers and stakeholders  
+### 🏢 Senior Software Developer — **BHE UNI**
+📅 *September 2022 – Present*
 
-### 🏢 **Web Developer — Saic Group**
-📅 *December 2020 – September 2022*  
-- Developed dynamic web platforms  
-- Worked closely with senior engineers  
-- Improved frontend UX and backend reliability  
+- Design and develop scalable web applications  
+- Build REST APIs and backend services  
+- Optimize performance and database efficiency  
+- Collaborate with cross-functional teams  
+- Work with cloud infrastructure and automation  
 
 ---
 
-<!-- ========================= EDUCATION ========================= -->
+### 🏢 Web Developer — **Saic Group**
+📅 *December 2020 – September 2022*
+
+- Developed and maintained web applications  
+- Assisted in backend and frontend development  
+- Improved UI/UX and application reliability  
+
+---
+
+<!-- ========================================================= -->
+<!--                        EDUCATION                         -->
+<!-- ========================================================= -->
+
 ## 🎓 Education
 
-🎓 **M.Sc. in Computer Science & Engineering**  
+🎓 **Master of Science (M.Sc.) in Computer Science & Engineering**  
 **Jahangirnagar University (JU)**
 
 ---
 
-<!-- ========================= TROPHIES ========================= -->
-## 🏆 GitHub Achievements
+<!-- ========================================================= -->
+<!--                       TECH STACK                         -->
+<!-- ========================================================= -->
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=devriazul&theme=dracula&row=1&no-frame=true" />
-</p>
-
----
-
-<!-- ========================= TECH STACK ========================= -->
 ## 🧰 Tech Stack
 
 ### 💻 Frontend
@@ -88,19 +115,35 @@ I’m a **Senior Full Stack Web Developer at BHE UNI**, passionate about buildin
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="40"/>
   <img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" width="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40"/>
 </p>
 
-### ☁️ DevOps & Cloud
+### ☁️ Cloud, DevOps & Automation
 <p>
+  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" width="40"/>
   <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" width="40"/>
   <img src="https://www.vectorlogo.zone/logos/digitalocean/digitalocean-official.svg" width="40"/>
-  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" width="40"/>
   <img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/ubuntu.svg" width="40"/>
 </p>
 
 ---
 
-<!-- ========================= STATS ========================= -->
+<!-- ========================================================= -->
+<!--                      GITHUB TROPHIES                     -->
+<!-- ========================================================= -->
+
+## 🏆 GitHub Achievements
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=devriazul&theme=dracula&no-frame=true&row=1"/>
+</p>
+
+---
+
+<!-- ========================================================= -->
+<!--                       GITHUB STATS                       -->
+<!-- ========================================================= -->
+
 ## 📊 GitHub Stats
 
 <p align="center">
@@ -117,7 +160,10 @@ I’m a **Senior Full Stack Web Developer at BHE UNI**, passionate about buildin
 
 ---
 
-<!-- ========================= FOOTER ========================= -->
+<!-- ========================================================= -->
+<!--                         FOOTER                           -->
+<!-- ========================================================= -->
+
 <h3 align="center">
-  💬 Let’s build something amazing together!
+  🤝 Let’s build scalable, automated & intelligent systems together
 </h3>
