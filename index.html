@@ -3,325 +3,892 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riazul Islam | Senior Software Developer & Full Stack Engineer</title>
-    <meta name="description" content="Portfolio of Riazul Islam, a Senior Software Developer specializing in Laravel, React, Cloud Infrastructure, and Business Automation.">
+    <title>Riazul Islam | Full Stack Developer & WordPress Expert in Dhaka</title>
+    <meta name="description" content="Hire Riazul Islam, a full stack developer in Dhaka, Bangladesh. 8+ years building Laravel, React & WordPress apps. 200+ projects delivered. Fast, SEO-friendly, mobile-first.">
+    <meta name="keywords" content="full stack developer Dhaka, Laravel developer Bangladesh, React developer, WordPress developer, hire web developer">
     
-    <!-- Fonts -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Riazul Islam | Full Stack Developer & WordPress Expert">
+    <meta property="og:description" content="8+ years building scalable web applications with Laravel, React & WordPress.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devriazul.github.io">
+
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --primary-glow: rgba(14,165,233,0.35);
+            --accent: #a855f7;
+            --accent-glow: rgba(168,85,247,0.35);
+            --bg: #040d1a;
+            --bg2: #071224;
+            --card: rgba(8, 22, 46, 0.7);
+            --border: rgba(14,165,233,0.12);
+            --border2: rgba(255,255,255,0.06);
+            --text: #f0f6ff;
+            --muted: #7a9cbf;
+            --grad: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; overflow-x: hidden; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; transition: color .3s; }
+        img { max-width: 100%; }
+
+        /* ─── SCROLLBAR ─── */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 2px; }
+
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: 90px 0; }
+
+        /* ─── CANVAS BG ─── */
+        #bgCanvas {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all .4s ease;
+        }
+        header.scrolled {
+            background: rgba(4,13,26,.85);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border);
+            padding: .8rem 0;
+        }
+        nav { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 1; }
+        .logo { font-family: 'Outfit', sans-serif; font-size: 1.6rem; font-weight: 800; letter-spacing: -0.03em; }
+        .logo span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+        .nav-links a {
+            font-size: .9rem; font-weight: 500; color: var(--muted); position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+            background: var(--primary); transition: width .3s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--text); }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+        .ham { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1001; }
+        .ham span { display: block; width: 26px; height: 2px; background: var(--text); transition: all .3s; border-radius: 2px; }
+
+        /* ─── HERO ─── */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center;
+            padding-top: 90px; position: relative; z-index: 1;
+        }
+        .hero-inner { display: grid; grid-template-columns: 1fr 350px; gap: 4rem; align-items: center; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: .6rem;
+            padding: .45rem 1.1rem;
+            background: rgba(14,165,233,.1); border: 1px solid rgba(14,165,233,.25);
+            border-radius: 2rem; font-size: .8rem; font-weight: 600; color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        .badge-dot { width: 7px; height: 7px; background: var(--primary); border-radius: 50%; animation: blink 1.8s infinite; }
+        @keyframes blink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(1.5)} }
+
+        .hero h1 { font-family: 'Outfit', sans-serif; font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 800; line-height: 1.08; margin-bottom: 1.5rem; }
+        .grad-text { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .hero p { font-size: 1.15rem; color: var(--muted); max-width: 540px; margin-bottom: 2.5rem; }
+
+        .btn-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            padding: .9rem 2rem; border-radius: .75rem; font-weight: 600;
+            font-size: .95rem; cursor: pointer; transition: all .3s; border: none;
+        }
+        .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 0 24px var(--primary-glow); }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 0 40px var(--primary-glow); }
+        .btn-ghost { background: transparent; border: 1px solid var(--border2); color: var(--text); }
+        .btn-ghost:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-2px); }
+
+        /* profile card */
+        .hero-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 2rem; padding: 2.5rem; text-align: center;
+            backdrop-filter: blur(12px); position: relative; overflow: hidden;
+        }
+        .hero-card::before {
+            content: ''; position: absolute; top: -60px; right: -60px;
+            width: 180px; height: 180px; background: var(--primary);
+            filter: blur(80px); opacity: .12; border-radius: 50%;
+        }
+        .avatar-ring {
+            width: 130px; height: 130px; border-radius: 50%; margin: 0 auto 1.2rem;
+            background: var(--grad); padding: 3px;
+        }
+        .avatar-ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: var(--bg2); }
+        .hero-card h2 { font-family: 'Outfit', sans-serif; font-size: 1.4rem; margin-bottom: .3rem; }
+        .hero-card .role { color: var(--primary); font-size: .9rem; font-weight: 600; margin-bottom: .5rem; }
+        .hero-card .loc { color: var(--muted); font-size: .8rem; display: flex; align-items: center; justify-content: center; gap: .3rem; margin-bottom: 1.5rem; }
+        .socials { display: flex; justify-content: center; gap: .75rem; }
+        .socials a {
+            width: 38px; height: 38px; border-radius: 50%;
+            background: rgba(255,255,255,.05); border: 1px solid var(--border2);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--muted); font-size: .95rem; transition: all .3s;
+        }
+        .socials a:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: translateY(-3px); }
+
+        /* stats */
+        .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 3rem; }
+        .stat {
+            background: var(--card); border: 1px solid var(--border);
+            backdrop-filter: blur(8px); border-radius: 1.2rem; padding: 1.5rem 1rem; text-align: center;
+            transition: border-color .3s;
+        }
+        .stat:hover { border-color: var(--primary); }
+        .stat h3 { font-family: 'Outfit', sans-serif; font-size: 2.4rem; font-weight: 800; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stat p { color: var(--muted); font-size: .85rem; margin-top: .3rem; font-weight: 500; }
+
+        /* ─── SECTION HEADERS ─── */
+        .sec-label { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .2em; color: var(--primary); display: block; margin-bottom: .6rem; }
+        .sec-title { font-family: 'Outfit', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: .8rem; line-height: 1.15; }
+        .sec-desc { color: var(--muted); max-width: 550px; }
+        .sec-header { margin-bottom: 3.5rem; }
+        .sec-header.center { text-align: center; }
+        .sec-header.center .sec-desc { margin: 0 auto; }
+
+        /* ─── CARDS ─── */
+        .card {
+            background: var(--card); border: 1px solid var(--border2);
+            border-radius: 1.5rem; padding: 2rem;
+            backdrop-filter: blur(8px); transition: all .35s;
+        }
+        .card:hover { border-color: var(--border); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.35); }
+        .card-icon {
+            width: 50px; height: 50px; border-radius: .9rem;
+            background: rgba(14,165,233,.1); display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem; color: var(--primary); margin-bottom: 1.2rem;
+        }
+        .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .6rem; }
+        .card p { color: var(--muted); font-size: .9rem; line-height: 1.6; }
+
+        /* chips */
+        .chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+        .chip {
+            font-size: .75rem; padding: .3rem .85rem; border-radius: 2rem;
+            background: rgba(14,165,233,.08); border: 1px solid rgba(14,165,233,.18);
+            color: var(--primary); font-weight: 600;
+        }
+
+        /* ─── 2 col grid ─── */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+
+        /* ─── ABOUT ─── */
+        .about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 3.5rem; align-items: start; }
+        .about-left .card { text-align: center; }
+        .about-left .card h3 { font-size: 1.3rem; }
+        .tag-list { display: flex; flex-direction: column; gap: .5rem; margin-top: 1.2rem; }
+        .tag-row { display: flex; gap: .5rem; }
+        .label-tag { font-size: .8rem; color: var(--primary); font-weight: 600; min-width: 90px; }
+        .val-tag { font-size: .8rem; color: var(--muted); }
+        .timeline { border-left: 2px solid var(--border); padding-left: 2rem; display: flex; flex-direction: column; gap: 1.8rem; }
+        .timeline-item { position: relative; }
+        .timeline-item::before {
+            content: ''; position: absolute; left: -2.6rem; top: .4rem;
+            width: 10px; height: 10px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 10px var(--primary);
+        }
+        .t-year { font-size: .78rem; color: var(--primary); font-weight: 700; margin-bottom: .2rem; }
+        .t-text { font-size: .88rem; color: var(--muted); }
+
+        /* ─── WHY CHOOSE ME ─── */
+        .alt-bg { background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 50%, var(--bg) 100%); position: relative; z-index: 1; }
+
+        /* ─── SERVICES ─── */
+        .service-card { display: flex; flex-direction: column; }
+        .service-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; transition: color .3s; }
+        .service-card:hover h3 { color: var(--primary); }
+        .service-tag { font-size: .72rem; padding: .2rem .6rem; background: rgba(168,85,247,.1); border: 1px solid rgba(168,85,247,.2); border-radius: 2rem; color: #c084fc; display: inline-block; margin-bottom: .8rem; }
+
+        /* ─── TECH STACK ─── */
+        .tech-card .chips { gap: .6rem; }
+        .tech-card .chip { background: rgba(255,255,255,.04); border-color: var(--border2); color: var(--text); }
+        .tech-card .chip:hover { border-color: var(--primary); color: var(--primary); background: rgba(14,165,233,.08); cursor: default; }
+
+        /* ─── PROJECTS ─── */
+        .project-card {
+            border-radius: 1.5rem; overflow: hidden; position: relative;
+            height: 400px; border: 1px solid var(--border2); cursor: pointer; transition: all .4s;
+        }
+        .project-card:hover { border-color: var(--border); transform: translateY(-6px); }
+        .project-bg {
+            width: 100%; height: 100%; background: var(--bg2);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 6rem; color: rgba(14,165,233,.07); transition: transform .6s;
+        }
+        .project-card:hover .project-bg { transform: scale(1.05); }
+        .project-info {
+            position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem;
+            background: linear-gradient(transparent, rgba(4,13,26,.96) 45%);
+        }
+        .project-cat { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--primary); display: block; margin-bottom: .4rem; }
+        .project-info h3 { font-size: 1.2rem; margin-bottom: .5rem; }
+        .project-info p { font-size: .85rem; color: var(--muted); margin-bottom: 1rem; line-height: 1.5; }
+
+        /* ─── EXPERIENCE ─── */
+        .exp-timeline { display: flex; flex-direction: column; gap: 1.5rem; }
+        .exp-card { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; }
+        .exp-date-col { padding-top: .2rem; }
+        .exp-date { font-size: .8rem; font-weight: 700; color: var(--primary); background: rgba(14,165,233,.1); border: 1px solid rgba(14,165,233,.2); padding: .4rem .9rem; border-radius: 2rem; display: inline-block; }
+        .exp-content h3 { font-size: 1.15rem; margin-bottom: .25rem; }
+        .exp-company { color: var(--primary); font-weight: 600; font-size: .9rem; display: block; margin-bottom: .8rem; }
+        .exp-content p { color: var(--muted); font-size: .9rem; margin-bottom: 1rem; }
+        .exp-content ul { list-style: none; display: flex; flex-direction: column; gap: .4rem; }
+        .exp-content ul li { font-size: .88rem; color: var(--muted); display: flex; gap: .6rem; }
+        .exp-content ul li::before { content: '→'; color: var(--primary); flex-shrink: 0; }
+
+        /* ─── CERTIFICATIONS ─── */
+        .cert-card { display: flex; gap: 1.2rem; align-items: flex-start; }
+        .cert-icon { width: 44px; height: 44px; border-radius: .8rem; background: rgba(168,85,247,.1); border: 1px solid rgba(168,85,247,.2); display: flex; align-items: center; justify-content: center; color: #c084fc; font-size: 1.1rem; flex-shrink: 0; }
+        .cert-info h4 { font-size: .95rem; font-weight: 700; margin-bottom: .2rem; }
+        .cert-info p { font-size: .82rem; color: var(--muted); }
+        .cert-year { font-size: .75rem; color: var(--primary); font-weight: 700; margin-top: .3rem; display: block; }
+
+        /* ─── TESTIMONIALS ─── */
+        .testimonials-slider { overflow: hidden; position: relative; }
+        .testimonials-track { display: flex; gap: 1.5rem; transition: transform .5s ease; }
+        .testimonial-slide { min-width: calc(33.333% - 1rem); flex-shrink: 0; }
+        .testimonial-card { background: var(--card); border: 1px solid var(--border2); border-radius: 1.5rem; padding: 2rem; height: 100%; }
+        .stars { display: flex; gap: .2rem; margin-bottom: 1rem; }
+        .stars i { color: var(--primary); font-size: .9rem; }
+        .testimonial-card blockquote { font-size: .92rem; color: var(--muted); font-style: italic; line-height: 1.65; margin-bottom: 1.5rem; }
+        .reviewer { display: flex; align-items: center; gap: .8rem; border-top: 1px solid var(--border2); padding-top: 1rem; }
+        .reviewer-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--grad); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .85rem; flex-shrink: 0; }
+        .reviewer-info strong { display: block; font-size: .9rem; }
+        .reviewer-info span { font-size: .8rem; color: var(--primary); }
+        .slider-btns { display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; }
+        .slider-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); background: var(--card); color: var(--text); cursor: pointer; font-size: 1rem; transition: all .3s; display: flex; align-items: center; justify-content: center; }
+        .slider-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+        /* ─── BLOG ─── */
+        .blog-card { display: flex; flex-direction: column; }
+        .blog-cat { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); display: block; margin-bottom: .5rem; }
+        .blog-card h3 { font-size: 1rem; font-weight: 700; line-height: 1.4; margin-bottom: .6rem; transition: color .3s; }
+        .blog-card:hover h3 { color: var(--primary); }
+        .blog-card p { font-size: .85rem; color: var(--muted); line-height: 1.6; flex: 1; }
+        .blog-meta { display: flex; justify-content: space-between; font-size: .78rem; color: var(--muted); margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border2); }
+
+        /* ─── CASE STUDIES ─── */
+        .case-card { transition: all .35s; }
+        .case-card:hover { border-color: var(--primary); transform: translateY(-4px); }
+        .case-outcome { font-size: .85rem; color: var(--muted); line-height: 1.65; flex: 1; }
+        .case-link { display: flex; align-items: center; gap: .4rem; color: var(--primary); font-size: .85rem; font-weight: 600; margin-top: 1.2rem; transition: gap .3s; }
+        .case-link:hover { gap: .7rem; }
+
+        /* ─── PROCESS ─── */
+        .process-card { text-align: center; }
+        .step-num { font-family: 'Outfit', sans-serif; font-size: 3.5rem; font-weight: 800; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; opacity: .35; }
+        .process-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; }
+        .process-card p { font-size: .88rem; color: var(--muted); }
+
+        /* ─── FAQ ─── */
+        .faq-item { border: 1px solid var(--border2); border-radius: 1rem; overflow: hidden; margin-bottom: .75rem; }
+        .faq-q {
+            width: 100%; background: none; border: none; color: var(--text); padding: 1.2rem 1.5rem;
+            font-size: .95rem; font-weight: 600; text-align: left; cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            transition: color .3s;
+        }
+        .faq-q:hover { color: var(--primary); }
+        .faq-q i { color: var(--primary); transition: transform .3s; flex-shrink: 0; }
+        .faq-q.open i { transform: rotate(180deg); }
+        .faq-a { display: none; padding: 0 1.5rem 1.2rem; font-size: .9rem; color: var(--muted); line-height: 1.7; }
+        .faq-a.open { display: block; }
+
+        /* ─── WORDPRESS ─── */
+        .wp-card .card-icon { background: rgba(33,117,197,.15); color: #4facfe; }
+
+        /* ─── CONTACT ─── */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start; }
+        .contact-methods { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2.5rem; }
+        .contact-item { display: flex; gap: 1.2rem; align-items: center; }
+        .contact-icon { width: 50px; height: 50px; border-radius: 1rem; background: rgba(14,165,233,.1); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--primary); flex-shrink: 0; }
+        .contact-item h4 { font-size: .9rem; font-weight: 700; margin-bottom: .2rem; }
+        .contact-item p, .contact-item a { font-size: .88rem; color: var(--muted); }
+        .contact-form { background: var(--card); border: 1px solid var(--border); border-radius: 2rem; padding: 2.5rem; backdrop-filter: blur(10px); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-group { display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1.3rem; }
+        .form-group label { font-size: .85rem; font-weight: 600; color: var(--muted); }
+        .form-group input, .form-group textarea, .form-group select {
+            background: rgba(255,255,255,.03); border: 1px solid var(--border2);
+            border-radius: .75rem; padding: .85rem 1rem; color: var(--text); font-size: .9rem;
+            transition: border-color .3s; font-family: 'Inter', sans-serif;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--primary); outline: none; }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        .form-group select option { background: var(--bg2); color: var(--text); }
+        .btn-full { width: 100%; justify-content: center; }
+
+        /* ─── FOOTER ─── */
+        footer { padding: 4rem 0 2rem; border-top: 1px solid var(--border2); position: relative; z-index: 1; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .footer-brand p { color: var(--muted); font-size: .88rem; margin: 1rem 0 1.5rem; max-width: 280px; }
+        .footer-heading { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--primary); margin-bottom: 1.2rem; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: .7rem; }
+        .footer-links a { font-size: .88rem; color: var(--muted); transition: color .3s; }
+        .footer-links a:hover { color: var(--primary); }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid var(--border2); }
+        .footer-bottom p { font-size: .82rem; color: var(--muted); }
+        .footer-socials { display: flex; gap: 1rem; }
+        .footer-socials a { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border2); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: .9rem; transition: all .3s; }
+        .footer-socials a:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-3px); }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner { text-align: center; background: linear-gradient(135deg, rgba(14,165,233,.1), rgba(168,85,247,.1)); border: 1px solid var(--border); border-radius: 2rem; padding: 4rem 2rem; position: relative; overflow: hidden; z-index: 1; }
+        .cta-banner::before { content: ''; position: absolute; top: -80px; left: 50%; transform: translateX(-50%); width: 300px; height: 200px; background: var(--primary); filter: blur(80px); opacity: .08; border-radius: 50%; }
+        .cta-banner h2 { font-family: 'Outfit', sans-serif; font-size: 2.8rem; font-weight: 800; margin-bottom: 1rem; }
+        .cta-banner p { color: var(--muted); font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+        /* ─── REVEAL ─── */
+        [data-reveal] { opacity: 0; transform: translateY(40px); transition: opacity .8s ease, transform .8s ease; }
+        [data-reveal].visible { opacity: 1; transform: translateY(0); }
+
+        /* ─── MOBILE NAV ─── */
+        @media (max-width: 900px) {
+            .ham { display: flex; }
+            .nav-links {
+                position: fixed; inset: 0; background: var(--bg); flex-direction: column;
+                justify-content: center; align-items: center; gap: 2.5rem;
+                transform: translateX(100%); transition: transform .4s ease; z-index: 1000;
+            }
+            .nav-links.open { transform: none; }
+            .nav-links a { font-size: 1.2rem; }
+            header nav > a.btn-ghost { display: none; }
+        }
+
+        @media (max-width: 1100px) {
+            .hero-inner { grid-template-columns: 1fr; }
+            .hero-card { display: none; }
+            .about-grid { grid-template-columns: 1fr; }
+            .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; }
+            .exp-card { grid-template-columns: 1fr; gap: .8rem; }
+            .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .testimonial-slide { min-width: calc(50% - .75rem); }
+        }
+        @media (max-width: 650px) {
+            section { padding: 65px 0; }
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .stats-row { grid-template-columns: repeat(3, 1fr); }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+            .testimonial-slide { min-width: 100%; }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">RIAZUL.</a>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<canvas id="bgCanvas"></canvas>
+
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <nav>
+            <a href="#home" class="logo">dev<span>riazul</span></a>
+            <ul class="nav-links" id="nav">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost" style="padding:.65rem 1.4rem;font-size:.85rem;">Hire Me</a>
+            <div class="ham" id="ham" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-inner">
+            <div>
+                <div class="hero-badge"><span class="badge-dot"></span>Available for Projects</div>
+                <h1>Full Stack<br>Developer &<br><span class="grad-text">WordPress Expert</span></h1>
+                <p>8+ years building scalable, high-performance web applications with Laravel, React & WordPress. Based in Dhaka — serving clients worldwide.</p>
+                <div class="btn-row">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-folder-open"></i> View Work</a>
+                    <a href="mailto:engr.riazul@gmail.com" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+                </div>
+                <div class="stats-row">
+                    <div class="stat"><h3>8+</h3><p>Years Exp.</p></div>
+                    <div class="stat"><h3>200+</h3><p>Projects</p></div>
+                    <div class="stat"><h3>50+</h3><p>Clients</p></div>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="avatar-ring">
+                    <img src="https://avatars.githubusercontent.com/devriazul" alt="Riazul Islam" onerror="this.style.background='#0ea5e922';this.alt='RI'">
+                </div>
+                <h2>Riazul Islam</h2>
+                <p class="role">Full Stack Developer & WordPress Expert</p>
+                <p class="loc"><i class="fas fa-location-dot"></i> Dhaka, Bangladesh &nbsp;·&nbsp; GMT+6</p>
+                <div class="socials">
+                    <a href="https://github.com/devriazul" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/devriazul" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/devriazul" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://stackoverflow.com/users/16483163/devriazul" target="_blank" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                    <a href="mailto:engr.riazul@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="alt-bg">
+    <div class="container">
+        <div class="about-grid" data-reveal>
+            <div class="about-left">
+                <div class="card" style="margin-bottom:1.5rem">
+                    <div class="socials" style="margin-bottom:1.2rem">
+                        <a href="https://github.com/devriazul" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/devriazul" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:engr.riazul@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <h3>Riazul Islam</h3>
+                    <p style="color:var(--primary);font-size:.85rem;margin:.3rem 0 1rem">Full Stack Developer & WordPress Expert</p>
+                    <div class="tag-list">
+                        <div class="tag-row"><span class="label-tag">📍 Location:</span><span class="val-tag">Dhaka, BD</span></div>
+                        <div class="tag-row"><span class="label-tag">💼 Role:</span><span class="val-tag">Senior Dev @ BHE UNI</span></div>
+                        <div class="tag-row"><span class="label-tag">🎓 Degree:</span><span class="val-tag">M.Sc. CS & Engineering</span></div>
+                        <div class="tag-row"><span class="label-tag">🕐 Timezone:</span><span class="val-tag">GMT+6</span></div>
+                        <div class="tag-row"><span class="label-tag">🌐 Email:</span><span class="val-tag">engr.riazul@gmail.com</span></div>
+                    </div>
+                </div>
+                <!-- Key Milestones -->
+                <div class="card">
+                    <h3 style="font-size:1rem;margin-bottom:1.5rem">Key Milestones</h3>
+                    <div class="timeline">
+                        <div class="timeline-item"><p class="t-year">2018</p><p class="t-text">Started professional web dev with PHP & WordPress.</p></div>
+                        <div class="timeline-item"><p class="t-year">2020</p><p class="t-text">Adopted Laravel; delivered first SaaS platform.</p></div>
+                        <div class="timeline-item"><p class="t-year">2021</p><p class="t-text">Went full-stack with React + TypeScript.</p></div>
+                        <div class="timeline-item"><p class="t-year">2022</p><p class="t-text">100+ projects completed across multiple industries.</p></div>
+                        <div class="timeline-item"><p class="t-year">2023</p><p class="t-text">Integrated AI via OpenAI, LangChain & n8n.</p></div>
+                        <div class="timeline-item"><p class="t-year">2024</p><p class="t-text">AWS & Docker certifications earned.</p></div>
+                        <div class="timeline-item"><p class="t-year">2025</p><p class="t-text">200+ projects, 50+ global clients. Ongoing.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span class="sec-label">About Me</span>
+                <h2 class="sec-title">Building the Web<br><span class="grad-text">One Layer at a Time</span></h2>
+                <p style="color:var(--muted);margin-bottom:1.5rem;line-height:1.8">I'm Riazul Islam — a full stack developer based in Dhaka, Bangladesh. Over the past 8+ years, I've worked on 200+ projects across healthcare, fintech, e-commerce, education, and logistics. My day-to-day work revolves around building custom web applications using <strong>Laravel</strong> and <strong>React</strong>, developing <strong>WordPress themes and plugins</strong>, and optimizing applications for performance and SEO.</p>
+                <p style="color:var(--muted);margin-bottom:2rem;line-height:1.8">What drives me is the satisfaction of shipping products that genuinely help businesses grow. I'm not just writing code — I'm thinking about user experience, page speed, search rankings, and long-term maintainability.</p>
+
+                <h4 style="margin-bottom:1rem;font-size:.9rem;text-transform:uppercase;letter-spacing:.1em;color:var(--primary)">Industries I Serve Best</h4>
+                <div class="chips" style="margin-bottom:2rem">
+                    <span class="chip">SaaS Platforms</span>
+                    <span class="chip">E-commerce</span>
+                    <span class="chip">Healthcare</span>
+                    <span class="chip">EdTech</span>
+                    <span class="chip">IoT Dashboards</span>
+                    <span class="chip">Real Estate</span>
+                    <span class="chip">Fintech</span>
+                    <span class="chip">Logistics</span>
+                </div>
+
+                <h4 style="margin-bottom:1rem;font-size:.9rem;text-transform:uppercase;letter-spacing:.1em;color:var(--primary)">How I Collaborate</h4>
+                <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem">
+                    <li style="display:flex;gap:.7rem;font-size:.88rem;color:var(--muted)"><span style="color:var(--primary)">→</span><span><strong style="color:var(--text)">Communication:</strong> Slack, WhatsApp, or Email. Transparent & no ghost acts.</span></li>
+                    <li style="display:flex;gap:.7rem;font-size:.88rem;color:var(--muted)"><span style="color:var(--primary)">→</span><span><strong style="color:var(--text)">Tools:</strong> Git/GitHub, Jira/Trello, Figma for design handoff.</span></li>
+                    <li style="display:flex;gap:.7rem;font-size:.88rem;color:var(--muted)"><span style="color:var(--primary)">→</span><span><strong style="color:var(--text)">Process:</strong> Agile sprints with demos every 1-2 weeks.</span></li>
+                    <li style="display:flex;gap:.7rem;font-size:.88rem;color:var(--muted)"><span style="color:var(--primary)">→</span><span><strong style="color:var(--text)">Timezone:</strong> GMT+6. Regularly overlaps with US, EU & APAC hours.</span></li>
                 </ul>
-                <a href="mailto:engr.riazul@gmail.com" class="btn btn-outline" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Hire Me</a>
-            </nav>
+            </div>
         </div>
-    </header>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
+<!-- Why Choose Me -->
+<section id="why">
+    <div class="container">
+        <div class="sec-header center" data-reveal>
+            <span class="sec-label">Why Choose Me</span>
+            <h2 class="sec-title">Delivering Excellence<br>Through <span class="grad-text">Expertise</span></h2>
+            <p class="sec-desc">Reliability, performance, and a passion for clean code — delivered every time.</p>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span></span> Available for New Opportunities
-                </div>
-                <h1>Building <span>Scalable</span> & Future-Ready Systems</h1>
-                <p>Hi, I'm Riazul Islam. A Senior Software Developer with 5+ years of experience in crafting high-performance web applications and automation workflows.</p>
-                <div class="btn-group">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
-                </div>
-                
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3>5+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>200+</h3>
-                        <p>Projects Delivered</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>50+</h3>
-                        <p>Global Clients</p>
-                    </div>
-                </div>
-            </div>
+        <div class="grid-3" data-reveal>
+            <div class="card"><div class="card-icon"><i class="fas fa-bolt"></i></div><h3>Fast Delivery</h3><p>Projects delivered on time with agile sprints and clear milestones. No surprises, no delays.</p></div>
+            <div class="card"><div class="card-icon"><i class="fas fa-shield-halved"></i></div><h3>Secure & Scalable</h3><p>Enterprise-grade security with scalable architecture from day one. Built to grow with your business.</p></div>
+            <div class="card"><div class="card-icon"><i class="fas fa-users"></i></div><h3>Client-Centric</h3><p>Transparent communication with regular updates and feedback loops. Your vision, my execution.</p></div>
+            <div class="card"><div class="card-icon"><i class="fas fa-rocket"></i></div><h3>Performance First</h3><p>Optimized for Core Web Vitals, SEO, and blazing-fast load times that convert visitors.</p></div>
+            <div class="card"><div class="card-icon"><i class="fas fa-clock"></i></div><h3>Long-Term Support</h3><p>Post-launch maintenance, monitoring, and continuous improvement so you're never stuck.</p></div>
+            <div class="card"><div class="card-icon"><i class="fas fa-code"></i></div><h3>Clean Code</h3><p>Well-documented, testable code following industry best practices and SOLID principles.</p></div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2>About <span>Me</span></h2>
-                <p>I am a Senior Software Developer at BHE UNI, driven by a passion for system architecture, cloud computing, and AI-driven automation.</p>
-            </div>
-            <div class="glass" style="padding: 3rem; margin-top: 2rem;">
-                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted);">
-                    Based in Dhaka, Bangladesh, I specialize in full-stack engineering with a heavy focus on the <strong>TALL stack</strong> (Tailwind, Alpine, Laravel, Livewire) and <strong>React/Next.js</strong> ecosystems. 
-                    Beyond development, I architect cloud infrastructures on <strong>AWS</strong> and build intelligent business automations using <strong>n8n</strong>. 
-                    I'm currently exploring the intersection of web technologies and <strong>Natural Language Processing (NLP)</strong>.
-                </p>
-            </div>
+<!-- Services -->
+<section id="services" class="alt-bg">
+    <div class="container">
+        <div class="sec-header" data-reveal>
+            <span class="sec-label">My Services</span>
+            <h2 class="sec-title">End-to-End <span class="grad-text">Development</span></h2>
+            <p class="sec-desc">Comprehensive web development solutions tailored to your business needs - from backend architecture to SEO optimization.</p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2>Technical <span>Stack</span></h2>
-                <p>A comprehensive toolkit of technologies I use to build production-grade applications.</p>
-            </div>
-            <div class="skills-wrapper">
-                <!-- Backend -->
-                <div class="skill-category glass">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
-                    <div class="skill-list">
-                        <span class="skill-pill">PHP</span>
-                        <span class="skill-pill">Laravel</span>
-                        <span class="skill-pill">Node.js</span>
-                        <span class="skill-pill">Express.js</span>
-                        <span class="skill-pill">Python</span>
-                        <span class="skill-pill">FastAPI</span>
-                    </div>
-                </div>
-                <!-- Frontend -->
-                <div class="skill-category glass">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
-                    <div class="skill-list">
-                        <span class="skill-pill">React</span>
-                        <span class="skill-pill">Next.js</span>
-                        <span class="skill-pill">Vue.js</span>
-                        <span class="skill-pill">TypeScript</span>
-                        <span class="skill-pill">Tailwind CSS</span>
-                        <span class="skill-pill">Next UI / Shadcn</span>
-                    </div>
-                </div>
-                <!-- DevOps & Clouds -->
-                <div class="skill-category glass">
-                    <h3><i class="fas fa-cloud"></i> Infrastructure</h3>
-                    <div class="skill-list">
-                        <span class="skill-pill">AWS</span>
-                        <span class="skill-pill">Digital Ocean</span>
-                        <span class="skill-pill">Docker</span>
-                        <span class="skill-pill">Linux (Ubuntu)</span>
-                        <span class="skill-pill">CI/CD</span>
-                        <span class="skill-pill">Nginx</span>
-                    </div>
-                </div>
-                <!-- Automation -->
-                <div class="skill-category glass">
-                    <h3><i class="fas fa-robot"></i> Automation & AI</h3>
-                    <div class="skill-list">
-                        <span class="skill-pill">n8n</span>
-                        <span class="skill-pill">NLP</span>
-                        <span class="skill-pill">OpenAI API</span>
-                        <span class="skill-pill">Web Scraping</span>
-                        <span class="skill-pill">Selenium</span>
-                    </div>
-                </div>
-            </div>
+        <div class="grid-3" data-reveal>
+            <div class="card service-card"><div class="card-icon"><i class="fas fa-server"></i></div><span class="service-tag">Backend</span><h3>Custom Web Applications</h3><p>Scalable, secure web apps built with Laravel & Node.js. REST APIs, auth systems, admin panels, and more.</p><div class="chips"><span class="chip">Laravel</span><span class="chip">Node.js</span><span class="chip">REST API</span></div></div>
+            <div class="card service-card"><div class="card-icon"><i class="fab fa-react"></i></div><span class="service-tag">Frontend</span><h3>React & Next.js Development</h3><p>High-performance, interactive UIs and SSR applications with React, Next.js, and TypeScript.</p><div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TypeScript</span></div></div>
+            <div class="card service-card"><div class="card-icon"><i class="fab fa-wordpress"></i></div><span class="service-tag">CMS</span><h3>WordPress Development</h3><p>Custom themes, plugins, WooCommerce stores, and performance-optimized WordPress sites that rank.</p><div class="chips"><span class="chip">WooCommerce</span><span class="chip">ACF</span><span class="chip">Headless</span></div></div>
+            <div class="card service-card"><div class="card-icon"><i class="fas fa-cloud"></i></div><span class="service-tag">DevOps</span><h3>Cloud & DevOps</h3><p>AWS deployments, Docker containerization, CI/CD pipelines, and Linux server management.</p><div class="chips"><span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">CI/CD</span></div></div>
+            <div class="card service-card"><div class="card-icon"><i class="fas fa-magnifying-glass"></i></div><span class="service-tag">SEO</span><h3>SEO Optimization</h3><p>Technical SEO audits, Core Web Vitals optimization, structured data, and content strategy.</p><div class="chips"><span class="chip">Core Web Vitals</span><span class="chip">Schema</span></div></div>
+            <div class="card service-card"><div class="card-icon"><i class="fas fa-robot"></i></div><span class="service-tag">AI & Automation</span><h3>Automation & AI Integration</h3><p>Business process automation with n8n, OpenAI API integration, web scraping, and LangChain workflows.</p><div class="chips"><span class="chip">n8n</span><span class="chip">OpenAI</span><span class="chip">Selenium</span></div></div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured <span>Projects</span></h2>
-                <p>A collection of my recent work across different domains and industries.</p>
+<!-- Tech Stack -->
+<section id="stack">
+    <div class="container">
+        <div class="sec-header center" data-reveal>
+            <span class="sec-label">Technology</span>
+            <h2 class="sec-title">Full <span class="grad-text">Tech Stack</span></h2>
+            <p class="sec-desc">Technologies I work with daily to build robust, scalable applications.</p>
+        </div>
+        <div class="grid-3" data-reveal>
+            <div class="card tech-card"><div class="card-icon"><i class="fas fa-server"></i></div><h3>Backend</h3><div class="chips"><span class="chip">Laravel</span><span class="chip">PHP 8+</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Django</span></div></div>
+            <div class="card tech-card"><div class="card-icon"><i class="fas fa-laptop-code"></i></div><h3>Frontend</h3><div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Vue.js</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span><span class="chip">HTML5/CSS3</span></div></div>
+            <div class="card tech-card"><div class="card-icon"><i class="fas fa-database"></i></div><h3>Database</h3><div class="chips"><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Firebase</span><span class="chip">SQLite</span></div></div>
+            <div class="card tech-card"><div class="card-icon"><i class="fas fa-cloud"></i></div><h3>DevOps & Cloud</h3><div class="chips"><span class="chip">AWS</span><span class="chip">DigitalOcean</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Nginx</span><span class="chip">CI/CD</span><span class="chip">Linux</span></div></div>
+            <div class="card tech-card"><div class="card-icon"><i class="fab fa-wordpress"></i></div><h3>CMS & E-commerce</h3><div class="chips"><span class="chip">WordPress</span><span class="chip">WooCommerce</span><span class="chip">Elementor</span><span class="chip">ACF</span><span class="chip">Gutenberg</span></div></div>
+            <div class="card tech-card"><div class="card-icon"><i class="fas fa-brain"></i></div><h3>AI & Automation</h3><div class="chips"><span class="chip">OpenAI API</span><span class="chip">LangChain</span><span class="chip">n8n</span><span class="chip">Selenium</span><span class="chip">NLP</span><span class="chip">Web Scraping</span></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects -->
+<section id="projects" class="alt-bg">
+    <div class="container">
+        <div class="sec-header" data-reveal>
+            <span class="sec-label">Portfolio</span>
+            <h2 class="sec-title">Featured <span class="grad-text">Projects</span></h2>
+            <p class="sec-desc">A selection of projects showcasing expertise across custom web apps, dashboards, and platforms.</p>
+        </div>
+        <div class="grid-3" data-reveal>
+            <div class="project-card"><div class="project-bg"><i class="fas fa-brain"></i></div><div class="project-info"><span class="project-cat">AI & Automation</span><h3>AI Task Management Agent</h3><p>Intelligent system using LLMs to prioritize and execute tasks efficiently across teams.</p><div class="chips"><span class="chip">Laravel</span><span class="chip">Python</span><span class="chip">OpenAI</span><span class="chip">PostgreSQL</span></div></div></div>
+            <div class="project-card"><div class="project-bg"><i class="fas fa-file-pen"></i></div><div class="project-info"><span class="project-cat">Frontend</span><h3>AI Enhanced Note Editor</h3><p>Smart note-taking app with AI suggestions, auto-formatting, and intelligent search.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">OpenAI</span></div></div></div>
+            <div class="project-card"><div class="project-bg"><i class="fas fa-graduation-cap"></i></div><div class="project-info"><span class="project-cat">EdTech</span><h3>Student Admission Portal</h3><p>Comprehensive admission management with online applications and document verification.</p><div class="chips"><span class="chip">Laravel</span><span class="chip">Vue.js</span><span class="chip">AWS</span></div></div></div>
+            <div class="project-card"><div class="project-bg"><i class="fas fa-university"></i></div><div class="project-info"><span class="project-cat">EdTech</span><h3>MyMac Smart Admission</h3><p>End-to-end admission management for institutions with automated workflows and analytics.</p><div class="chips"><span class="chip">Laravel</span><span class="chip">React</span><span class="chip">Docker</span></div></div></div>
+            <div class="project-card"><div class="project-bg"><i class="fas fa-chart-line"></i></div><div class="project-info"><span class="project-cat">CRM</span><h3>Lead2Enrollment CRM</h3><p>Specialized CRM for education lead management with deep analytics and conversion tracking.</p><div class="chips"><span class="chip">Laravel</span><span class="chip">Vue.js</span><span class="chip">Redis</span></div></div></div>
+            <div class="project-card"><div class="project-bg"><i class="fas fa-play-circle"></i></div><div class="project-info"><span class="project-cat">E-Learning</span><h3>EduWise LMS</h3><p>Feature-rich e-learning platform with video streaming, quizzes, and progress tracking.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">AWS S3</span></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Studies -->
+<section id="case-studies">
+    <div class="container">
+        <div class="sec-header" data-reveal>
+            <span class="sec-label">Case Studies</span>
+            <h2 class="sec-title">Real Results,<br><span class="grad-text">Measurable Impact</span></h2>
+            <p class="sec-desc">How I've helped businesses solve real challenges and achieve measurable growth.</p>
+        </div>
+        <div class="grid-3" data-reveal>
+            <div class="card case-card"><div class="card-icon"><i class="fas fa-lightbulb"></i></div><h3>IoT Energy Dashboard</h3><p class="case-outcome">Built a real-time monitoring & predictive alert system for smart buildings, reducing energy costs by <strong>22%</strong>.</p><div class="chips" style="margin:1rem 0"><span class="chip">IoT</span><span class="chip">React</span><span class="chip">Node.js</span></div><span class="case-link">Read more <i class="fas fa-arrow-right fa-sm"></i></span></div>
+            <div class="card case-card"><div class="card-icon"><i class="fas fa-shopping-cart"></i></div><h3>WooCommerce → Laravel</h3><p class="case-outcome">Migrated 15K+ products from WooCommerce to custom Laravel platform, improving page load speed by <strong>60%</strong>.</p><div class="chips" style="margin:1rem 0"><span class="chip">Laravel</span><span class="chip">E-commerce</span></div><span class="case-link">Read more <i class="fas fa-arrow-right fa-sm"></i></span></div>
+            <div class="card case-card"><div class="card-icon"><i class="fas fa-buildings"></i></div><h3>Real Estate CRM SaaS</h3><p class="case-outcome">Automated lead tracking for a real estate agency, increasing agent conversion rates by <strong>35%</strong>.</p><div class="chips" style="margin:1rem 0"><span class="chip">Laravel</span><span class="chip">Vue.js</span><span class="chip">CRM</span></div><span class="case-link">Read more <i class="fas fa-arrow-right fa-sm"></i></span></div>
+            <div class="card case-card"><div class="card-icon"><i class="fas fa-hospital"></i></div><h3>Hospital Patient Portal</h3><p class="case-outcome">Streamlined appointment scheduling system, reducing patient wait times by <strong>40%</strong>.</p><div class="chips" style="margin:1rem 0"><span class="chip">Healthcare</span><span class="chip">Laravel</span></div><span class="case-link">Read more <i class="fas fa-arrow-right fa-sm"></i></span></div>
+            <div class="card case-card"><div class="card-icon"><i class="fas fa-store"></i></div><h3>AI Marketplace Search</h3><p class="case-outcome">Implemented AI-powered product search for a multi-vendor marketplace, boosting user engagement by <strong>50%</strong>.</p><div class="chips" style="margin:1rem 0"><span class="chip">AI</span><span class="chip">Next.js</span></div><span class="case-link">Read more <i class="fas fa-arrow-right fa-sm"></i></span></div>
+            <div class="card case-card"><div class="card-icon"><i class="fas fa-graduation-cap"></i></div><h3>University LMS</h3><p class="case-outcome">Scaled LMS platform to <strong>10K+</strong> concurrent students with real-time collaboration tools and live video.</p><div class="chips" style="margin:1rem 0"><span class="chip">EdTech</span><span class="chip">Laravel</span><span class="chip">WebSocket</span></div><span class="case-link">Read more <i class="fas fa-arrow-right fa-sm"></i></span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience & Education -->
+<section id="experience" class="alt-bg">
+    <div class="container">
+        <div class="sec-header" data-reveal>
+            <span class="sec-label">Journey</span>
+            <h2 class="sec-title">Work Experience &<br><span class="grad-text">Education</span></h2>
+        </div>
+        <div class="exp-timeline" data-reveal>
+            <div class="exp-card">
+                <div class="exp-date-col"><span class="exp-date">2022 – Present</span></div>
+                <div class="card exp-content">
+                    <h3>Senior Full Stack Developer</h3>
+                    <span class="exp-company">BHE UNI (Tech Solutions Inc.)</span>
+                    <p>Leading development of enterprise-level web applications, mentoring junior developers, and architecting scalable cloud solutions.</p>
+                    <ul>
+                        <li>Led a team of 5 developers delivering large-scale educational platforms</li>
+                        <li>Reduced application load time by 60% through optimization</li>
+                        <li>Implemented CI/CD pipelines; improved deployment frequency by 3x</li>
+                        <li>Architected multi-tenant SaaS with AWS and Docker</li>
+                    </ul>
+                </div>
             </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glass">
-                    <div class="project-img">
-                        <i class="fas fa-brain" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 5rem; color: var(--primary); opacity: 0.2;"></i>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">AI & Automation</span>
-                        <h3 class="project-title">AI Task Management Agent</h3>
-                        <p class="project-desc">Intelligent system helping teams prioritize and execute tasks using LLMs and automated workflows.</p>
-                        <div class="project-tech">
-                            <span>Laravel</span>
-                            <span>Python</span>
-                            <span>OpenAI</span>
-                        </div>
-                    </div>
+            <div class="exp-card">
+                <div class="exp-date-col"><span class="exp-date">2020 – 2022</span></div>
+                <div class="card exp-content">
+                    <h3>Web Developer</h3>
+                    <span class="exp-company">Saic Group (Digital Innovations Ltd.)</span>
+                    <p>Developed and maintained multiple client projects using Laravel, Vue.js, and AWS infrastructure across industries.</p>
+                    <ul>
+                        <li>Delivered 50+ client projects on schedule and within budget</li>
+                        <li>Integrated third-party APIs including payment gateways and CRMs</li>
+                        <li>Built RESTful APIs consumed by iOS & Android apps</li>
+                    </ul>
                 </div>
-                <!-- Project 2 -->
-                <div class="project-card glass">
-                    <div class="project-img">
-                        <i class="fas fa-graduation-cap" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 5rem; color: var(--primary); opacity: 0.2;"></i>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">EdTech</span>
-                        <h3 class="project-title">MyMac Admission Portal</h3>
-                        <p class="project-desc">End-to-end management platform for educational institutions with automated enrollment workflows.</p>
-                        <div class="project-tech">
-                            <span>Laravel</span>
-                            <span>React</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                    </div>
+            </div>
+            <div class="exp-card">
+                <div class="exp-date-col"><span class="exp-date">2018 – 2020</span></div>
+                <div class="card exp-content">
+                    <h3>Junior Web Developer</h3>
+                    <span class="exp-company">StartUp Hub</span>
+                    <p>Began professional career building web applications and learning modern development practices in an agile environment.</p>
+                    <ul>
+                        <li>Learned agile methodologies and professional development practices</li>
+                        <li>Built and launched first production-grade application</li>
+                        <li>Contributed to open-source WordPress plugin development</li>
+                    </ul>
                 </div>
-                <!-- Project 3 -->
-                <div class="project-card glass">
-                    <div class="project-img">
-                        <i class="fas fa-chart-line" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 5rem; color: var(--primary); opacity: 0.2;"></i>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">CRM</span>
-                        <h3 class="project-title">Lead2Enrollment CRM</h3>
-                        <p class="project-desc">A specialized CRM for education lead management with deep analytics and conversion tracking.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Laravel</span>
-                            <span>Redis</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="project-card glass">
-                    <div class="project-img">
-                        <i class="fas fa-video" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 5rem; color: var(--primary); opacity: 0.2;"></i>
-                    </div>
-                    <div class="project-overlay">
-                        <span class="project-category">E-Learning</span>
-                        <h3 class="project-title">EduWise Platform</h3>
-                        <p class="project-desc">LMS with video streaming, interactive quizzes, and comprehensive course management features.</p>
-                        <div class="project-tech">
-                            <span>Next.js</span>
-                            <span>AWS S3</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
+            </div>
+            <!-- Education -->
+            <div class="exp-card">
+                <div class="exp-date-col"><span class="exp-date">University</span></div>
+                <div class="card exp-content">
+                    <h3>M.Sc. in Computer Science & Engineering</h3>
+                    <span class="exp-company">Jahangirnagar University (JU)</span>
+                    <p>Focused on software architecture, data structures, algorithms, and distributed systems.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2>Work <span>Journey</span></h2>
-                <p>My professional experience across different organizations and roles.</p>
+<!-- Certifications -->
+<section id="certs">
+    <div class="container">
+        <div class="sec-header center" data-reveal>
+            <span class="sec-label">Credentials</span>
+            <h2 class="sec-title">Certifications & <span class="grad-text">Awards</span></h2>
+        </div>
+        <div class="grid-4" data-reveal>
+            <div class="card"><div class="cert-card"><div class="cert-icon"><i class="fab fa-aws"></i></div><div class="cert-info"><h4>AWS Solutions Architect</h4><p>Amazon Web Services</p><span class="cert-year">2023 · Associate Level</span></div></div></div>
+            <div class="card"><div class="cert-card"><div class="cert-icon"><i class="fab fa-laravel"></i></div><div class="cert-info"><h4>Laravel Certified Developer</h4><p>Laravel LLC</p><span class="cert-year">2022 · Professional</span></div></div></div>
+            <div class="card"><div class="cert-card"><div class="cert-icon"><i class="fas fa-diagram-project"></i></div><div class="cert-info"><h4>Professional Scrum Master I</h4><p>Scrum.org</p><span class="cert-year">2022 · PSM I</span></div></div></div>
+            <div class="card"><div class="cert-card"><div class="cert-icon"><i class="fab fa-docker"></i></div><div class="cert-info"><h4>Docker Certified Associate</h4><p>Docker Inc.</p><span class="cert-year">2021 · DCA</span></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- WordPress Expertise -->
+<section id="wordpress" class="alt-bg">
+    <div class="container">
+        <div class="sec-header center" data-reveal>
+            <span class="sec-label">WordPress</span>
+            <h2 class="sec-title">WordPress <span class="grad-text">Expertise</span></h2>
+            <p class="sec-desc">Custom WordPress theme & plugin development with years of hands-on experience in building scalable CMS solutions.</p>
+        </div>
+        <div class="grid-3" data-reveal>
+            <div class="card wp-card"><div class="card-icon"><i class="fas fa-paintbrush"></i></div><h3>Custom Theme Development</h3><p>Pixel-perfect WordPress themes built from scratch with clean, semantic code. Fully responsive, SEO-optimized, and performance-tuned.</p></div>
+            <div class="card wp-card"><div class="card-icon"><i class="fas fa-puzzle-piece"></i></div><h3>Plugin Development</h3><p>Custom WordPress plugins for unique business logic — payment gateways, booking systems, API integrations, and more.</p></div>
+            <div class="card wp-card"><div class="card-icon"><i class="fas fa-globe"></i></div><h3>WooCommerce Solutions</h3><p>Complete e-commerce setups with custom product pages, checkout flows, payment integrations, and inventory management.</p></div>
+            <div class="card wp-card"><div class="card-icon"><i class="fas fa-bolt"></i></div><h3>Performance Optimization</h3><p>Speed audit and optimization — caching, lazy loading, database cleanup, CDN integration, and Core Web Vitals tuning.</p></div>
+            <div class="card wp-card"><div class="card-icon"><i class="fas fa-shield-halved"></i></div><h3>Security & Maintenance</h3><p>Hardened WordPress security, malware removal, regular updates, backups, and uptime monitoring.</p></div>
+            <div class="card wp-card"><div class="card-icon"><i class="fas fa-rocket"></i></div><h3>Migration & Upgrades</h3><p>Seamless migration from any platform to WordPress, or upgrading legacy themes/plugins to modern standards.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Work Process -->
+<section id="process">
+    <div class="container">
+        <div class="sec-header center" data-reveal>
+            <span class="sec-label">Workflow</span>
+            <h2 class="sec-title">How I <span class="grad-text">Work</span></h2>
+            <p class="sec-desc">A proven process that ensures quality delivery and clear communication every time.</p>
+        </div>
+        <div class="grid-4" data-reveal>
+            <div class="card process-card"><div class="step-num">01</div><h3>Discovery</h3><p>Understanding your goals, audience, and technical requirements through in-depth consultation.</p></div>
+            <div class="card process-card"><div class="step-num">02</div><h3>Planning</h3><p>Architecture design, wireframes, and project roadmap creation with clear milestones.</p></div>
+            <div class="card process-card"><div class="step-num">03</div><h3>Development</h3><p>Agile sprints with regular demos, iterative improvements, and continuous feedback loops.</p></div>
+            <div class="card process-card"><div class="step-num">04</div><h3>Launch & Support</h3><p>Deployment, testing, performance optimization, and ongoing maintenance post-launch.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="alt-bg">
+    <div class="container">
+        <div class="sec-header center" data-reveal>
+            <span class="sec-label">Social Proof</span>
+            <h2 class="sec-title">What Clients <span class="grad-text">Say</span></h2>
+        </div>
+        <div class="testimonials-slider" data-reveal>
+            <div class="testimonials-track" id="testimonialTrack">
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Riazul delivered exceptional work on our project. His attention to detail and technical expertise made our vision come to life perfectly. Highly professional."</blockquote>
+                        <div class="reviewer"><div class="reviewer-avatar">JS</div><div class="reviewer-info"><strong>John Smith</strong><span>CEO, Tech Startup</span></div></div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Working with Riazul was a pleasure. He understood our requirements perfectly and delivered ahead of schedule. The code quality was outstanding."</blockquote>
+                        <div class="reviewer"><div class="reviewer-avatar">SJ</div><div class="reviewer-info"><strong>Sarah Johnson</strong><span>Product Manager, EdTech Co.</span></div></div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Outstanding developer! Riazul's code quality and problem-solving skills are top-notch. He transformed our legacy system into a modern, scalable platform."</blockquote>
+                        <div class="reviewer"><div class="reviewer-avatar">MC</div><div class="reviewer-info"><strong>Michael Chen</strong><span>CTO, Digital Agency</span></div></div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"The WordPress site Riazul built for us increased our organic traffic by 120% in 3 months. His SEO knowledge combined with dev skills is rare."</blockquote>
+                        <div class="reviewer"><div class="reviewer-avatar">AL</div><div class="reviewer-info"><strong>Anna Lee</strong><span>Marketing Director, Ecom Brand</span></div></div>
+                    </div>
+                </div>
             </div>
-            <div class="experience-container">
-                <div class="exp-item">
-                    <div class="exp-date">Sept 2022 - Present</div>
-                    <div class="exp-content">
-                        <h3>Senior Software Developer</h3>
-                        <span class="exp-company">BHE UNI</span>
-                        <p class="exp-desc">Leading the development of scalable web platforms, architecting backend services, and managing cloud infrastructure.</p>
-                        <ul class="exp-highlights">
-                            <li>Design and develop production-grade web applications.</li>
-                            <li>Optimize application performance and database queries.</li>
-                            <li>Implement business automation workflows using n8n.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-date">Dec 2020 - Sept 2022</div>
-                    <div class="exp-content">
-                        <h3>Web Developer</h3>
-                        <span class="exp-company">Saic Group</span>
-                        <p class="exp-desc">Developed and maintained various internal and client-facing web applications.</p>
-                        <ul class="exp-highlights">
-                            <li>Collaborated with teams to deliver high-quality code.</li>
-                            <li>Improved system reliability and developed intuitive UI/UX.</li>
-                            <li>Integrated various third-party APIs and services.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="slider-btns">
+                <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In <span>Touch</span></h2>
-                <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+<!-- Blog -->
+<section id="blog">
+    <div class="container">
+        <div class="sec-header" data-reveal>
+            <span class="sec-label">Writing</span>
+            <h2 class="sec-title">Latest <span class="grad-text">Articles</span></h2>
+            <p class="sec-desc">Insights and tutorials on web development, Laravel, React, WordPress, and modern tech.</p>
+        </div>
+        <div class="grid-3" data-reveal>
+            <div class="card blog-card"><span class="blog-cat">AI</span><h3>The Impact of AI on Modern Web Development</h3><p>Exploring how artificial intelligence is reshaping the landscape of web development and what developers need to know to stay ahead.</p><div class="blog-meta"><span><i class="fas fa-calendar fa-sm"></i> Jan 15, 2025</span><span><i class="fas fa-clock fa-sm"></i> 5 min read</span></div></div>
+            <div class="card blog-card"><span class="blog-cat">Security</span><h3>Chinese Hackers Are Exploiting React2Shell Vulnerabilities</h3><p>Security researchers have discovered a new attack vector targeting React applications. Here's what you need to know and how to protect your apps.</p><div class="blog-meta"><span><i class="fas fa-calendar fa-sm"></i> Jan 10, 2025</span><span><i class="fas fa-clock fa-sm"></i> 8 min read</span></div></div>
+            <div class="card blog-card"><span class="blog-cat">PHP</span><h3>What Developers Should Know About PHP 8.5</h3><p>PHP 8.5 brings exciting new features and significant performance improvements. A complete breakdown for backend developers.</p><div class="blog-meta"><span><i class="fas fa-calendar fa-sm"></i> Jan 5, 2025</span><span><i class="fas fa-clock fa-sm"></i> 6 min read</span></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt-bg">
+    <div class="container">
+        <div class="sec-header center" data-reveal>
+            <span class="sec-label">FAQ</span>
+            <h2 class="sec-title">Frequently Asked <span class="grad-text">Questions</span></h2>
+        </div>
+        <div style="max-width:780px;margin:0 auto" data-reveal>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What services do you offer as a full stack developer?<i class="fas fa-chevron-down"></i></button><div class="faq-a">I provide comprehensive web development services — from building custom web applications with Laravel and React to creating tailored WordPress themes and plugins. My work also covers REST API design, database architecture, frontend UI/UX, SEO auditing, and automation solutions using n8n and Selenium. Whether you need an MVP for a startup or a complex enterprise platform, I handle the full development lifecycle.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much does a custom web application cost?<i class="fas fa-chevron-down"></i></button><div class="faq-a">Every project is different, and I always provide a detailed estimate after understanding your specific requirements. As a general guide: a focused landing page starts around $500, while feature-rich web applications typically range from $2,000 to $15,000+. I'm upfront about pricing — no hidden fees — and will work with you to find a scope that fits your budget.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What technologies do you specialize in?<i class="fas fa-chevron-down"></i></button><div class="faq-a">My core stack: Laravel (PHP 8+), React, Node.js, TypeScript, MySQL, and PostgreSQL. For deployment: Docker, AWS, DigitalOcean, and CI/CD pipelines. On the CMS side: WordPress theme and plugin development, WooCommerce, and headless CMS. I also integrate AI capabilities using OpenAI, LangChain, and n8n.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you build custom WordPress themes and plugins?<i class="fas fa-chevron-down"></i></button><div class="faq-a">Absolutely — it's one of my core strengths. I develop custom WordPress themes from scratch, ensuring they are lightweight, accessible, SEO-friendly, and fully responsive. For plugins, I build bespoke solutions: booking engines, payment gateways, custom dashboards, API integrations, and more.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How long does it typically take to complete a project?<i class="fas fa-chevron-down"></i></button><div class="faq-a">A simple landing page usually takes 1-2 weeks. A standard web application with auth and integrations takes 4-8 weeks. Larger platforms may require 2-4 months. I provide realistic timelines at the start and deliver regular progress demos so there are never surprises.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you provide ongoing maintenance and support after launch?<i class="fas fa-chevron-down"></i></button><div class="faq-a">Yes. I offer post-launch support packages covering bug fixes, security patches, performance monitoring, server management, and feature enhancements. Maintenance plans are available monthly or quarterly, and I also provide ad-hoc support for urgent issues.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can you collaborate with my existing team or codebase?<i class="fas fa-chevron-down"></i></button><div class="faq-a">Definitely. I regularly join existing teams, contribute to established codebases, and integrate with whatever workflow you have — Git, Jira, Slack, or any project management tool. I'm comfortable working across time zones and adapting to your team's processes.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <div class="contact-grid" data-reveal>
+            <div>
+                <span class="sec-label">Contact</span>
+                <h2 class="sec-title">Let's Build<br><span class="grad-text">Something Amazing</span></h2>
+                <p style="color:var(--muted);margin-bottom:2rem;line-height:1.8">Have a project in mind? Whether you need a custom web application, a WordPress site, or SEO optimization — I'd love to help bring it to life.</p>
+                <div class="contact-methods">
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><a href="mailto:engr.riazul@gmail.com">engr.riazul@gmail.com</a></div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fab fa-linkedin-in"></i></div><div><h4>LinkedIn</h4><a href="https://linkedin.com/in/devriazul" target="_blank">linkedin.com/in/devriazul</a></div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div><h4>WhatsApp</h4><a href="https://wa.me/8801722754100" target="_blank">+880 1722 754 100</a></div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-location-dot"></i></div><div><h4>Location</h4><p>Dhaka, Bangladesh (Remote Worldwide)</p></div></div>
+                </div>
             </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-methods">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>engr.riazul@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-                            <div class="contact-text">
-                                <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/devriazul</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Dhaka, Bangladesh</p>
-                            </div>
-                        </div>
+            <div class="contact-form">
+                <h3 style="font-size:1.4rem;margin-bottom:2rem">Send a Message</h3>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group"><label>First Name</label><input id="cfFirstName" type="text" placeholder="Riazul" required></div>
+                        <div class="form-group"><label>Last Name</label><input id="cfLastName" type="text" placeholder="Islam" required></div>
                     </div>
-                </div>
-                <div class="contact-form glass">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                    </form>
-                </div>
+                    <div class="form-group"><label>Email</label><input id="cfEmail" type="email" placeholder="hello@example.com" required></div>
+                    <div class="form-group"><label>Project Type</label>
+                        <select id="cfService">
+                            <option value="">Select a service...</option>
+                            <option>Custom Web Application</option>
+                            <option>WordPress Development</option>
+                            <option>React / Next.js Frontend</option>
+                            <option>Laravel Backend API</option>
+                            <option>SEO Optimization</option>
+                            <option>Cloud & DevOps</option>
+                            <option>AI & Automation</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label>Message</label><textarea id="cfMessage" placeholder="Tell me about your project..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-full" id="cfSubmitBtn"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <a href="#" class="logo">RIAZUL.</a>
+<!-- CTA Banner -->
+<section>
+    <div class="container" data-reveal>
+        <div class="cta-banner">
+            <h2>Ready to Build<br><span class="grad-text">Something Extraordinary?</span></h2>
+            <p>From custom Laravel applications to WordPress sites — I'm here to turn your idea into a production-ready product.</p>
+            <div class="btn-row" style="justify-content:center;gap:1.2rem">
+                <a href="https://wa.me/8801722754100" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Me</a>
+                <a href="mailto:engr.riazul@gmail.com" class="btn btn-ghost"><i class="fas fa-envelope"></i> Send Email</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo" style="display:inline-block;margin-bottom:.5rem">dev<span>riazul</span></a>
+                <p>Full Stack Developer & WordPress Expert based in Dhaka, Bangladesh. Building scalable, high-performance web applications for clients worldwide.</p>
                 <div class="footer-socials">
                     <a href="https://github.com/devriazul" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/devriazul" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -329,13 +896,194 @@
                     <a href="https://stackoverflow.com/users/16483163/devriazul" target="_blank"><i class="fab fa-stack-overflow"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2026 Riazul Islam. All rights reserved.</p>
+            <div>
+                <p class="footer-heading">Quick Links</p>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-heading">Services</p>
+                <ul class="footer-links">
+                    <li><a href="#services">Custom Web Apps</a></li>
+                    <li><a href="#services">Laravel Development</a></li>
+                    <li><a href="#services">React & Next.js</a></li>
+                    <li><a href="#wordpress">WordPress Dev</a></li>
+                    <li><a href="#services">SEO Optimization</a></li>
+                    <li><a href="#services">AI & Automation</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Riazul Islam. All rights reserved.</p>
+            <p style="font-size:.78rem;color:var(--muted)">Designed & Built with ❤️ by Riazul Islam</p>
+        </div>
+    </div>
+</footer>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+<script>
+// ─── CANVAS PARTICLE BG ───
+const canvas = document.getElementById('bgCanvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+class Particle {
+    constructor() { this.reset(); }
+    reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 1.5 + .3;
+        this.speedX = (Math.random() - .5) * .4;
+        this.speedY = (Math.random() - .5) * .4;
+        this.opacity = Math.random() * .4 + .05;
+    }
+    update() {
+        this.x += this.speedX; this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+    }
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(14,165,233,${this.opacity})`;
+        ctx.fill();
+    }
+}
+
+for (let i = 0; i < 120; i++) particles.push(new Particle());
+
+function animateCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => { p.update(); p.draw(); });
+    // draw connections
+    for (let i = 0; i < particles.length; i++) {
+        for (let j = i+1; j < particles.length; j++) {
+            const d = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
+            if (d < 120) {
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = `rgba(14,165,233,${.08 * (1 - d/120)})`;
+                ctx.lineWidth = .5;
+                ctx.stroke();
+            }
+        }
+    }
+    requestAnimationFrame(animateCanvas);
+}
+animateCanvas();
+
+// ─── HEADER SCROLL ───
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+    updateActiveNav();
+});
+
+// ─── MOBILE MENU ───
+function toggleMenu() {
+    document.getElementById('nav').classList.toggle('open');
+}
+document.getElementById('nav').querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+});
+
+// ─── SMOOTH SCROLL ───
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (!t) return;
+        e.preventDefault();
+        window.scrollTo({ top: t.offsetTop - 90, behavior: 'smooth' });
+    });
+});
+
+// ─── ACTIVE NAV ───
+function updateActiveNav() {
+    const sections = document.querySelectorAll('section[id]');
+    let curr = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) curr = s.id; });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === `#${curr}`);
+    });
+}
+
+// ─── REVEAL ───
+const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: .12 });
+document.querySelectorAll('[data-reveal]').forEach(el => revealObs.observe(el));
+
+// ─── FAQ ───
+function toggleFaq(btn) {
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(q => { q.classList.remove('open'); q.nextElementSibling.classList.remove('open'); });
+    if (!isOpen) { btn.classList.add('open'); btn.nextElementSibling.classList.add('open'); }
+}
+
+// ─── TESTIMONIALS SLIDER ───
+const track = document.getElementById('testimonialTrack');
+const slides = track.querySelectorAll('.testimonial-slide');
+let current = 0;
+const total = slides.length;
+let slidesPerView = () => window.innerWidth < 650 ? 1 : window.innerWidth < 1100 ? 2 : 3;
+
+function updateSlider() {
+    const pct = 100 / slidesPerView();
+    slides.forEach(s => s.style.minWidth = `calc(${pct}% - 1rem)`);
+    track.style.transform = `translateX(calc(-${current * pct}% - ${current}rem))`;
+}
+document.getElementById('prevBtn').onclick = () => { current = Math.max(0, current - 1); updateSlider(); };
+document.getElementById('nextBtn').onclick = () => { current = Math.min(total - slidesPerView(), current + 1); updateSlider(); };
+window.addEventListener('resize', updateSlider);
+updateSlider();
+
+// Auto-play testimonials
+setInterval(() => {
+    current = current >= total - slidesPerView() ? 0 : current + 1;
+    updateSlider();
+}, 4000);
+
+// ─── CONTACT FORM → WHATSAPP ───
+document.getElementById('contactForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const firstName = document.getElementById('cfFirstName').value.trim();
+    const lastName  = document.getElementById('cfLastName').value.trim();
+    const email     = document.getElementById('cfEmail').value.trim();
+    const service   = document.getElementById('cfService').value;
+    const message   = document.getElementById('cfMessage').value.trim();
+
+    const text = [
+        `Hi Riazul! I'm ${firstName} ${lastName}.`,
+        `📧 Email: ${email}`,
+        service ? `🛠 Service: ${service}` : '',
+        ``,
+        message
+    ].filter(Boolean).join('\n');
+
+    const waUrl = `https://wa.me/8801722754100?text=${encodeURIComponent(text)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+    const btn = document.getElementById('cfSubmitBtn');
+    btn.innerHTML = '<i class="fab fa-whatsapp"></i> Opening WhatsApp…';
+    btn.disabled = true;
+    setTimeout(() => {
+        btn.innerHTML = '<i class="fab fa-whatsapp"></i> Send via WhatsApp';
+        btn.disabled = false;
+        e.target.reset();
+    }, 3000);
+});
+</script>
 </body>
 </html>
